@@ -10,10 +10,40 @@
 
 | GPTS | 定位 | 正式指令来源 | 建议 Knowledge |
 |---|---|---|---|
+| SK 前置生产 GPT | 原料清洗 / 半成品生产器 | `MRYGP/1SK/SK 前置生产系统指令.md` | `MRYGP/1SK` 轻量知识包：`repo_index.yml`、`知识包02-核心规则包.md`、`知识包03-仓库导航包.md`、`知识包04-产品雷达规则包.md`、`知识包06-案例格式包.md`、`知识包07-内容生产规则包.md`、`知识包08-高质量样本包.md`、`知识包09-理论压缩包A.md`、`知识包10-理论压缩包B.md` |
 | 写作工坊 GPTS | 公众号文章改写器 | `MRYGP/SK/meta/写作工坊-系统指令.md` | `article_template.md`、`公众号写作指南.md`、`公众号内容生产经验手册.md`、`文章发布SOP.md` |
 | 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | `公众号写作指南.md`、`公众号内容生产经验手册.md` |
 | SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md`（待创建） | 待定 |
 | 深度研究员 GPTS | 研究任务执行器 | `MRYGP/SK/meta/gpts-deep-researcher-design.md` | 研究指令、目标项目素材、必要模板 |
+
+---
+
+## SK 前置生产 GPT 配置
+
+### 定位
+
+SK 前置生产 GPT 是「三湘问道·AI应用拆解工作室」的前置生产器。
+
+它不是泛化聊天助手，也不是最终发布器。  
+它负责把外部资料、链接、截图、访谈、RSS、讨论记录和模糊想法，转成可落库的 Markdown 半成品草稿。
+
+一句话：
+
+> SK 前置生产 GPT = 外部资料 → 可落库 Markdown 半成品。
+
+### 常见产物
+
+- `radar_item`
+- `research_note`
+- `case_card`
+- `article_draft`
+- `repo_update` 草稿
+
+### 正式指令来源
+
+```txt
+MRYGP/1SK/SK 前置生产系统指令.md
+```
 
 ---
 
