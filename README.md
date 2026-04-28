@@ -14,7 +14,7 @@
 1. 保存 ChatGPT Project / GPTS 的系统指令
 2. 管理 Project 知识库上传清单
 3. 规定 GPTS 如何读取 GitHub 上的 SK 当前状态
-4. 登记 SK 体系下各 GPTS 的角色边界与调用入口
+4. 登记 SK 体系下各 GPTS 的角色边界、调用入口与建议知识库配置
 
 ### 角色边界
 
@@ -135,7 +135,7 @@ SKGPT/
 - `instructions/`：存 ChatGPT Project / GPTS 系统指令
 - `knowledge/`：存 Project 上传文件清单
 - `protocols/`：存 GitHub 现读与漂移检查协议
-- `gpts/`：登记 SK 体系下各 GPTS 的角色、用途与正式指令来源；不复制 GPTS 正文指令
+- `gpts/`：登记 SK 体系下各 GPTS 的角色、调用边界、正式指令来源与建议知识库配置；不复制 GPTS 正文指令
 - `_project-upload/`：本地临时上传包，不提交 GitHub
 
 ## 六、当前阶段目标
