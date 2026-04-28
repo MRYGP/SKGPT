@@ -1,8 +1,9 @@
 # SKGPT · 三湘问道知识库主控副驾配置仓库
 
-> 本仓库是 `MRYGP/SK` 的 ChatGPT Project / GPTS 适配层。
+> 本仓库是 `MRYGP/SK` 的 ChatGPT Project / GPTS 适配层，也是站在 SK 外部的观察者与校正者。
 > 它不是 SK 知识库副本，不承载文章、案例、执行状态或动态进度。
-> SK 的内容与状态 SSOT 始终是 `MRYGP/SK`。
+> SK 的内容、案例、方法论正文与执行状态 SSOT 始终是 `MRYGP/SK`。
+> SKGPT 只规定 ChatGPT / GPTS 如何读取、上传、校验和避免误判 SK。
 
 ---
 
@@ -13,6 +14,19 @@
 1. 保存 ChatGPT Project / GPTS 的系统指令
 2. 管理 Project 知识库上传清单
 3. 规定 GPTS 如何读取 GitHub 上的 SK 当前状态
+
+### 角色边界
+
+`SKGPT` 对 `SK` 的关系不是“并行维护”，而是“外部校正”。
+
+- `SK` 继续保持原有维护模式：内容、案例、方法论、执行状态都在 `MRYGP/SK`
+- `SKGPT` 不写入 SK 的动态状态，不复制 SK 的 case-index、case-cards、README、执行状态总表
+- `SKGPT` 负责校正 ChatGPT Project / GPTS 是否误用旧上传文件、旧记忆或错误读取顺序
+- 当发现状态冲突时，SKGPT 只提供读取协议和修复建议，最终状态仍以 `MRYGP/SK` 当前文件为准
+
+一句话：
+
+> SK 是主体，SKGPT 是观察者、校正者和适配器。
 
 ---
 
