@@ -1,6 +1,7 @@
 # SKGPT · GPTS 注册表
 
-> 版本：v0.1 · 2026-04-28
+> 版本：v0.2 · 2026-04-30
+> 变更：同步写作工坊、第一读者、深度研究员、SK 前置生产 GPT 的新规则边界
 > 用途：登记 SK 体系下各 GPTS 的角色、调用边界、正式指令来源与建议知识库配置
 > 原则：SKGPT 只登记和校正，不复制 SK 中的 GPTS 正文指令
 
@@ -11,8 +12,8 @@
 | GPTS | 定位 | 正式指令来源 | 建议 Knowledge |
 |---|---|---|---|
 | SK 前置生产 GPT | 原料清洗 / 半成品生产器 | `MRYGP/1SK/SK 前置生产系统指令.md` | `MRYGP/1SK` 轻量知识包：`repo_index.yml`、`知识包02-核心规则包.md`、`知识包03-仓库导航包.md`、`知识包04-产品雷达规则包.md`、`知识包06-案例格式包.md`、`知识包07-内容生产规则包.md`、`知识包08-高质量样本包.md`、`知识包09-理论压缩包A.md`、`知识包10-理论压缩包B.md` |
-| 写作工坊 GPTS | 公众号文章改写器 | `MRYGP/SK/meta/写作工坊-系统指令.md` | `article_template.md`、`公众号写作指南.md`、`公众号内容生产经验手册.md`、`文章发布SOP.md` |
-| 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | `公众号写作指南.md`、`公众号内容生产经验手册.md` |
+| 写作工坊 GPTS | 公众号文章改写器 | `MRYGP/SK/meta/写作工坊-系统指令.md` | `content/article_template.md`（必）、`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`、`content/文章发布SOP.md`；均须为 `MRYGP/SK` 当前版 |
+| 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | 必传：`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`；建议传：`content/article_template.md` |
 | SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md`（待创建） | 待定 |
 | 深度研究员 GPTS | 资料搜集 / 证据验证 / 多源研究报告 | `MRYGP/SK/meta/gpts-deep-researcher-design.md` | `core/研究员输出模板.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`content/公众号写作指南.md` |
 
@@ -115,6 +116,17 @@ MRYGP/1SK
 - SK 前置生产 GPT 不得依据 `MRYGP/1SK` 判断“当前发布状态、执行状态、雷达状态、case-index/case-cards 是否最新”。
 - 涉及当前状态时，必须按 `protocols/github-read-protocol.md` 读取 GitHub `MRYGP/SK` 当前文件。
 
+### 与本轮 SK 写作规则的同步
+
+SK 前置生产 GPT 产出 `article_draft` 时，必须遵守 `MRYGP/1SK` 最新**知识包 07**（内容生产规则包）：
+
+1. 文章草稿必须包含 `## 先说结论`
+2. 机会招募型草稿必须前置真位置
+3. 机会判断类草稿必须加入「时间变量推敲」
+4. 真实产品体检转招募时，必须按机会招募型输出
+
+但 `1SK` 仍不保存 SK 当前状态。涉及当前发布状态、文章编号、执行状态时，必须读取 `MRYGP/SK` 当前文件。
+
 ---
 
 ## 二、写作工坊 GPTS 配置
@@ -122,6 +134,21 @@ MRYGP/1SK
 ### 定位
 
 写作工坊 GPTS 是公众号文章改写器，不是分析师、顾问、框架设计者。
+
+### 新增能力要求
+
+写作工坊 GPTS 必须执行：
+
+1. 所有文章在标题后生成 `## 先说结论`
+2. 机会招募型文章必须在前文打出「真位置」
+3. 诊断空白 / MTP / 真实产品体检转招募类文章，必须包含：真问题、真位置、真模式、真门槛、真人群、真请求
+4. 机会型文章必须加入 150–300 字的「时间变量推敲」
+5. 不得把文章只写成行业问题分析
+6. 若用户给的底稿没有摘要，写作工坊必须自动补一版「先说结论」
+
+**正式指令来源**：
+
+`MRYGP/SK/meta/写作工坊-系统指令.md`
 
 ### 推荐 Knowledge
 
@@ -131,6 +158,8 @@ MRYGP/1SK
 - `content/公众号写作指南.md`
 - `content/公众号内容生产经验手册.md`
 - `content/文章发布SOP.md`
+
+以上路径均相对 `MRYGP/SK`；**须使用主仓库 `main` 上最新版**。尤其 `content/article_template.md` 与 `content/公众号内容生产经验手册.md` 已包含「先说结论 / 机会招募型 / 时间变量推敲」等硬规则；旧版会导致写法漂移。
 
 任务时临时提供：
 
@@ -159,15 +188,37 @@ MRYGP/1SK
 
 第一读者 GPTS 是公众号发布前的外部读者模拟器，不是内部审稿人。
 
+### 新增审查能力
+
+第一读者 GPTS 必须检查：
+
+1. 摘要 / 「先说结论」检查
+2. 机会摘要检查
+3. 招募信号评分 0–5
+4. 时间变量检查
+5. 医疗 / 法律 / 监管类表达风险
+6. 若无「先说结论」，必须判定未过稿
+7. 若机会招募文章未在前三分之一写出「真正空着的位置」，必须判定未过稿
+8. 若存在明显「杀死」变量却完全不提，必须判定未过稿
+
+**正式指令来源**：
+
+`MRYGP/SK/meta/第一读者-系统指令.md`
+
 ### 推荐 Knowledge
 
 必传：
 
 - `content/公众号写作指南.md`
+- `content/公众号内容生产经验手册.md`
 
 建议传：
 
-- `content/公众号内容生产经验手册.md`
+- `content/article_template.md`
+
+**原因**：
+
+`article_template.md` 已承载「先说结论 / 机会招募型 / 时间变量推敲」的硬规则；第一读者不读该文件时容易漏检模板级要求。
 
 必须开启：
 
@@ -220,6 +271,19 @@ MRYGP/SK/meta/gpts-deep-researcher-design.md
 该文件是深度研究员 GPTS 的设计源文件。  
 更新该文件后，不会自动同步到 ChatGPT GPTS 页面，需要手动复制最新版 Instructions。
 
+### 新增研究要求
+
+深度研究员 GPTS 必须：
+
+1. 所有关键事实附可核对来源（链接或明确出处）
+2. 区分「官方披露事实」与「独立验证结论」
+3. 必须搜索失败案例和反例
+4. 中国竞品不能只有名单，须整理为「战场地图」式结构
+5. 输出待验证假设
+6. 输出下一步 7 天可执行任务
+7. 对创业机会类方向，须加入轻量「时间变量推敲」
+8. 不做最终判断，不宣布入库、不宣布发布
+
 ### 推荐 Knowledge
 
 必须上传以下 4 个文件，且必须来自 `MRYGP/SK` 当前文件：
@@ -228,6 +292,15 @@ MRYGP/SK/meta/gpts-deep-researcher-design.md
 - `core/failure_modes.yml`
 - `core/evidence_levels.yml`
 - `content/公众号写作指南.md`
+
+**建议增加**（可选、有助于输出稳定与方法论一致）：
+
+- `core/SKILL-深度研究指令设计.md`（`MRYGP/SK`）
+
+**原因**：
+
+该文件承载深度研究指令设计方法，可帮助深度研究员稳定输出高质量研究报告。  
+正式设计说明仍以 `MRYGP/SK/meta/gpts-deep-researcher-design.md` 为准；若与 GPTS 内 Instructions 冲突，以 GPTS 页及设计文档的更新版为准。
 
 不建议上传：
 
