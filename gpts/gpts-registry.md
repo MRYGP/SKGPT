@@ -1,8 +1,8 @@
 # SKGPT · GPTS 注册表
 
-> 版本：v0.3 · 2026-05-02
-> 变更：新增 SK-产品对标初拆 GPTS（38 产品对标库批量初拆 / 10 维度底稿）
-> 历史：v0.2 同步写作工坊、第一读者、深度研究员、SK 前置生产 GPT 的新规则边界
+> 版本：v0.4 · 2026-05-02
+> 变更：SK-产品对标初拆 GPTS 指令稿入库；Knowledge 扩充（必传 / 建议 / 动态读取）
+> 历史：v0.3 新增 SK-产品对标初拆 GPTS；v0.2 同步写作工坊、第一读者、深度研究员、SK 前置生产 GPT 的新规则边界
 > 用途：登记 SK 体系下各 GPTS 的角色、调用边界、正式指令来源与建议知识库配置
 > 原则：SKGPT 只登记和校正，不复制 SK 中的 GPTS 正文指令
 
@@ -17,7 +17,7 @@
 | 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | 必传：`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`；建议传：`content/article_template.md` |
 | SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md`（待创建） | 待定 |
 | 深度研究员 GPTS | 资料搜集 / 证据验证 / 多源研究报告 | `MRYGP/SK/meta/gpts-deep-researcher-design.md` | `core/研究员输出模板.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`content/公众号写作指南.md` |
-| SK-产品对标初拆 GPTS | 38 产品对标库的批量初拆 / 10 维度对标分析底稿生成器 | `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md`（待创建） | 必传：`core/product-teardown-template.md`、`core/SKILL-AI产品复制推演框架-v0.1.md`、`core/产品评估决策清单-v1.0.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`core/三湘问道铁律.md`；动态读取：`cases/2026/产品对标库-38个AI产品复制价值排名.md`、`ops/执行状态总表.md` |
+| SK-产品对标初拆 GPTS | 38 产品对标库的批量初拆 / 10 维度对标分析底稿生成器 | `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md` | 必传：`core/product-teardown-template.md`、`core/SKILL-AI产品复制推演框架-v0.1.md`、`core/产品评估决策清单-v1.0.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`core/三湘问道铁律.md`、`content/case-card-format-v1.0.md`、`core/评估引擎速查版.md`；建议：`core/SKILL-深度研究指令设计.md`；动态读取：`README.md`、`ops/执行状态总表.md`、`cases/2026/产品对标库-38个AI产品复制价值排名.md`、`cases/2026/case-cards.md`、`cases/2026/case-index.md`、`cases/2026/深度底稿/`（路径均相对 `MRYGP/SK`，须 GitHub 当前版） |
 
 ---
 
@@ -447,7 +447,35 @@ SK-产品对标初拆 GPTS 是 38 产品对标库的批量初拆器。
 1. `MRYGP/SK/README.md`
 2. `MRYGP/SK/ops/执行状态总表.md`
 3. `MRYGP/SK/cases/2026/产品对标库-38个AI产品复制价值排名.md`
-4. 必要时读取 `MRYGP/SK/cases/2026/case-cards.md` 和 `MRYGP/SK/cases/2026/case-index.md`
+4. `MRYGP/SK/cases/2026/case-cards.md`
+5. `MRYGP/SK/cases/2026/case-index.md`
+6. `MRYGP/SK/cases/2026/深度底稿/`（按产品名检索）
+
+### 推荐 Knowledge（GPTS 页上传）
+
+必传（路径相对 `MRYGP/SK`，须主分支当前版）：
+
+- `core/product-teardown-template.md`
+- `core/SKILL-AI产品复制推演框架-v0.1.md`
+- `core/产品评估决策清单-v1.0.md`
+- `core/failure_modes.yml`
+- `core/evidence_levels.yml`
+- `core/三湘问道铁律.md`
+- `content/case-card-format-v1.0.md`
+- `core/评估引擎速查版.md`
+
+建议：
+
+- `core/SKILL-深度研究指令设计.md`
+
+动态读取（与 Step 0 / 状态校准一致，不得仅凭 Knowledge 替代现读）：
+
+- `README.md`
+- `ops/执行状态总表.md`
+- `cases/2026/产品对标库-38个AI产品复制价值排名.md`
+- `cases/2026/case-cards.md`
+- `cases/2026/case-index.md`
+- `cases/2026/深度底稿/`
 
 ### 输出边界
 
