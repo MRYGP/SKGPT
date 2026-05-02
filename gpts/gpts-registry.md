@@ -1,7 +1,8 @@
 # SKGPT · GPTS 注册表
 
-> 版本：v0.2 · 2026-04-30
-> 变更：同步写作工坊、第一读者、深度研究员、SK 前置生产 GPT 的新规则边界
+> 版本：v0.3 · 2026-05-02
+> 变更：新增 SK-产品对标初拆 GPTS（38 产品对标库批量初拆 / 10 维度底稿）
+> 历史：v0.2 同步写作工坊、第一读者、深度研究员、SK 前置生产 GPT 的新规则边界
 > 用途：登记 SK 体系下各 GPTS 的角色、调用边界、正式指令来源与建议知识库配置
 > 原则：SKGPT 只登记和校正，不复制 SK 中的 GPTS 正文指令
 
@@ -16,6 +17,7 @@
 | 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | 必传：`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`；建议传：`content/article_template.md` |
 | SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md`（待创建） | 待定 |
 | 深度研究员 GPTS | 资料搜集 / 证据验证 / 多源研究报告 | `MRYGP/SK/meta/gpts-deep-researcher-design.md` | `core/研究员输出模板.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`content/公众号写作指南.md` |
+| SK-产品对标初拆 GPTS | 38 产品对标库的批量初拆 / 10 维度对标分析底稿生成器 | `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md`（待创建） | 必传：`core/product-teardown-template.md`、`core/SKILL-AI产品复制推演框架-v0.1.md`、`core/产品评估决策清单-v1.0.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`core/三湘问道铁律.md`；动态读取：`cases/2026/产品对标库-38个AI产品复制价值排名.md`、`ops/执行状态总表.md` |
 
 ---
 
@@ -400,11 +402,71 @@ MRYGP/SK/meta/gpts-deep-researcher-design.md
 
 ---
 
+## SK-产品对标初拆 GPTS 配置
+
+### 定位
+
+SK-产品对标初拆 GPTS 是 38 产品对标库的批量初拆器。
+
+它负责把 `cases/2026/产品对标库-38个AI产品复制价值排名.md` 中尚未完成 10 维度分析的产品，转化为可供 Claude / SK 工作台审核的 Markdown 初拆底稿。
+
+一句话：
+
+> SK-产品对标初拆 GPTS = 38 产品队列 -> 初拆底稿 -> Claude 审核提示词。
+
+### 适合
+
+- 列出 38 产品中尚未拆解的产品
+- 按 A/B/C/D 优先级生成拆解队列
+- 对单个产品输出 10 维度初拆
+- 生成证据账本
+- 生成 Claude 审核提示词
+- 生成 Cursor / Hermes 入库建议
+
+### 不适合
+
+- 判断最终是否押注
+- 替代 Claude 审核
+- 写公众号终稿
+- 宣布仓库已更新
+- 维护 SK 当前状态
+- 跳过 GitHub 现读直接用 Knowledge 判断拆解进度
+
+### 状态判断规则
+
+凡涉及以下问题，必须读取 GitHub `MRYGP/SK` 当前文件：
+
+- 38 产品当前分析状态
+- 哪些产品已完成 10 维度分析
+- 哪些产品已有案例卡
+- 是否存在状态漂移
+- 是否需要更新产品对标库
+
+默认读取：
+
+1. `MRYGP/SK/README.md`
+2. `MRYGP/SK/ops/执行状态总表.md`
+3. `MRYGP/SK/cases/2026/产品对标库-38个AI产品复制价值排名.md`
+4. 必要时读取 `MRYGP/SK/cases/2026/case-cards.md` 和 `MRYGP/SK/cases/2026/case-index.md`
+
+### 输出边界
+
+输出 Markdown 初拆稿，不输出最终发布文章。
+
+每次必须附：
+
+- 建议保存路径
+- 证据账本
+- Claude 审核提示词
+- 下一步最小动作
+
+---
+
 ## 五、状态判断铁律
 
 `MRYGP/1SK` 也不得作为 SK 当前状态来源。它只是 SK 前置生产 GPT 的轻量知识包。
 
-写作工坊 GPTS、第一读者 GPTS、SK 前置生产 GPT、深度研究员 GPTS、SK-GPTS 都不得凭自身 Knowledge 判断 SK 当前状态。
+写作工坊 GPTS、第一读者 GPTS、SK 前置生产 GPT、深度研究员 GPTS、SK-产品对标初拆 GPTS、SK-GPTS 都不得凭自身 Knowledge 判断 SK 当前状态。
 
 任何 GPTS 都不得凭自身 Knowledge 判断以下问题：
 
