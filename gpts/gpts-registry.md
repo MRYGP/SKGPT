@@ -17,7 +17,7 @@
 | 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | 必传：`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`；建议传：`content/article_template.md` |
 | SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md` | 待定 |
 | 深度研究员 GPTS | 资料搜集 / 证据验证 / 多源研究报告 | `MRYGP/SK/meta/gpts-deep-researcher-design.md` | `core/研究员输出模板.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`content/公众号写作指南.md` |
-| SK-产品对标初拆 GPTS | 38 产品对标库的批量初拆 / 10 维度对标分析底稿生成器 | `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md` | 必传：`core/product-teardown-template.md`、`core/SKILL-AI产品复制推演框架-v0.1.md`、`core/产品评估决策清单-v1.0.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`core/三湘问道铁律.md`、`content/case-card-format-v1.0.md`、`core/评估引擎速查版.md`；建议：`core/SKILL-深度研究指令设计.md`；动态读取：`README.md`、`ops/执行状态总表.md`、`cases/2026/产品对标库-38个AI产品复制价值排名.md`、`cases/2026/case-cards.md`、`cases/2026/case-index.md`、`cases/2026/深度底稿/`（路径均相对 `MRYGP/SK`，须 GitHub 当前版） |
+| SK-产品对标初拆 GPTS | 38 产品对标库的批量初拆 / 10 维度对标分析底稿生成器 | `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-builder-instructions.md` | **完整操作协议（Knowledge）：** `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md`。**必传：** `core/product-teardown-template.md`、`core/SKILL-AI产品复制推演框架-v0.1.md`、`core/产品评估决策清单-v1.0.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`core/三湘问道铁律.md`、`content/case-card-format-v1.0.md`、`core/评估引擎速查版.md`；建议：`core/SKILL-深度研究指令设计.md`；动态读取：`README.md`、`ops/执行状态总表.md`、`cases/2026/产品对标库-38个AI产品复制价值排名.md`、`cases/2026/case-cards.md`、`cases/2026/case-index.md`、`cases/2026/深度底稿/`（路径均相对 `MRYGP/SK`，须 GitHub 当前版） |
 
 ---
 
@@ -403,6 +403,18 @@ MRYGP/SK/meta/gpts-deep-researcher-design.md
 ---
 
 ## SK-产品对标初拆 GPTS 配置
+
+### 正式指令来源（GPT Builder Instructions）
+
+```txt
+MRYGP/SKGPT/instructions/sk-product-teardown-gpts-builder-instructions.md
+```
+
+### 完整操作协议 / Knowledge
+
+```txt
+MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md
+```
 
 ### 定位
 
