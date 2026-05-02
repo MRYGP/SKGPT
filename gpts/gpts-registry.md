@@ -15,7 +15,7 @@
 | SK 前置生产 GPT | 原料清洗 / 半成品生产器 | `MRYGP/1SK/SK 前置生产系统指令.md` | `MRYGP/1SK` 轻量知识包：`repo_index.yml`、`知识包02-核心规则包.md`、`知识包03-仓库导航包.md`、`知识包04-产品雷达规则包.md`、`知识包06-案例格式包.md`、`知识包07-内容生产规则包.md`、`知识包08-高质量样本包.md`、`知识包09-理论压缩包A.md`、`知识包10-理论压缩包B.md` |
 | 写作工坊 GPTS | 公众号文章改写器 | `MRYGP/SK/meta/写作工坊-系统指令.md` | `content/article_template.md`（必）、`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`、`content/文章发布SOP.md`；均须为 `MRYGP/SK` 当前版 |
 | 第一读者 GPTS | 发布前读者检测器 | `MRYGP/SK/meta/第一读者-系统指令.md` | 必传：`content/公众号写作指南.md`、`content/公众号内容生产经验手册.md`；建议传：`content/article_template.md` |
-| SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md`（待创建） | 待定 |
+| SK-GPTS：三湘问道知识库主控副驾 | 固定入口 / 主控副驾 | `MRYGP/SKGPT/instructions/sk-gpts-system-instructions.md` | 待定 |
 | 深度研究员 GPTS | 资料搜集 / 证据验证 / 多源研究报告 | `MRYGP/SK/meta/gpts-deep-researcher-design.md` | `core/研究员输出模板.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`content/公众号写作指南.md` |
 | SK-产品对标初拆 GPTS | 38 产品对标库的批量初拆 / 10 维度对标分析底稿生成器 | `MRYGP/SKGPT/instructions/sk-product-teardown-gpts-instructions.md` | 必传：`core/product-teardown-template.md`、`core/SKILL-AI产品复制推演框架-v0.1.md`、`core/产品评估决策清单-v1.0.md`、`core/failure_modes.yml`、`core/evidence_levels.yml`、`core/三湘问道铁律.md`、`content/case-card-format-v1.0.md`、`core/评估引擎速查版.md`；建议：`core/SKILL-深度研究指令设计.md`；动态读取：`README.md`、`ops/执行状态总表.md`、`cases/2026/产品对标库-38个AI产品复制价值排名.md`、`cases/2026/case-cards.md`、`cases/2026/case-index.md`、`cases/2026/深度底稿/`（路径均相对 `MRYGP/SK`，须 GitHub 当前版） |
 
