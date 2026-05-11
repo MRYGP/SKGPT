@@ -98,7 +98,7 @@ Project 最多 25 个文件，推荐结构：
 本地 `D:\SKGPT` 可以建立以下目录：
 
 ```txt
-D:\SKGPT\_project-upload
+D:\SKGPT\project-upload
 ├── stable-core
 ├── current-mainline
 └── task-slots
@@ -106,11 +106,11 @@ D:\SKGPT\_project-upload
 
 说明：
 
-- `_project-upload/stable-core`：放 18 个稳定内核文件
-- `_project-upload/current-mainline`：放 5 个当前主线资产文件
-- `_project-upload/task-slots`：放 2 个任务机动文件
+- `project-upload/stable-core`：放 18 个稳定内核文件
+- `project-upload/current-mainline`：放 5 个当前主线资产文件
+- `project-upload/task-slots`：放 2 个任务机动文件
 
-`_project-upload` 只是本地上传包，默认不提交到 GitHub。
+project-upload 是 Project 上传包的版本化快照，用于记录当前建议上传到 ChatGPT Project 的文件副本。
 
 ---
 
