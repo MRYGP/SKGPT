@@ -1,7 +1,7 @@
 # SKGPT · ChatGPT Project 上传文件清单
 
-> 版本：v0.3 · 2026-05-12  
-> 变更：固化 18+5+2 路径与顺序；`article_template` **v2.6**（开篇以 **30 秒规则** 为主口径，**不**再把固定 `## 先说结论` 当作所有文章唯一硬规则）、`product-teardown-template` **v4.7**、`项目审问清单` **v1.4** 基线；`meta/CLAUDE系统指令.md` 与若干文件列入「不建议长期上传、须现读」；增补 SKGPT 配置类现读说明与 Project 手工同步提醒  
+> 版本：v0.3 · 2026-05-16（上传包刷新）  
+> 变更：固化 18+5+2 路径与顺序；`article_template` **v2.6**（开篇以 **30 秒规则** 为主口径，**不**再把固定 `## 先说结论` 当作所有文章唯一硬规则）；`product-teardown-template` **不得低于 v4.7，以 SK main 当前为准**（2026-05-16：**v4.8**）；`项目审问清单` **不得低于 v1.4，以 SK main 当前为准**（2026-05-16：**v1.5**）；`产品评估决策清单-v1.0` **v1.4**；`公众号内容生产经验手册` 须含 **教训38**；`meta/CLAUDE系统指令.md`、`content/case-card-format-v1.0.md`、`content/公众号内容大纲-30篇规划.md`、`meta/SK知识库使用方法-框架红队法.md` 列入「不建议长期上传、须现读」；增补 SKGPT 配置类现读说明与 Project 手工同步提醒  
 > 维护仓库：`MRYGP/SKGPT`（本文件**不**占用 ChatGPT Project 的 25 个知识库上传位，仅为**上传包说明书**）
 
 ---
@@ -51,15 +51,15 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 | 1 | `北极星文档.md` | 战略锚点、北极星、科学创业主路径 |
 | 2 | `content/article_template.md` | 公众号结构与底线（**v2.6**：开篇以 **30 秒规则** 为硬口径；机会类等 **显性前置判断卡**，**不**要求所有文种固定 `## 先说结论` 小标题） |
 | 3 | `content/公众号写作指南.md` | 语言规范、证据规则、禁用词 |
-| 4 | `content/公众号内容生产经验手册.md` | 文章生产经验、检查清单、历史教训（须含 **教训34–37**；若主仓库已增后续条目以当前为准） |
+| 4 | `content/公众号内容生产经验手册.md` | 文章生产经验、检查清单、历史教训（须含 **教训38**；若主仓库已增后续条目以 SK main 当前为准） |
 | 5 | `content/文章发布SOP.md` | 发布前后流程 |
-| 6 | `core/product-teardown-template.md` | AI 产品 10 维度拆解模板（**v4.7**，含 9.5 时间变量推敲等） |
-| 7 | `core/项目审问清单.md` | 项目评估前置排雷（**v1.4**） |
+| 6 | `core/product-teardown-template.md` | AI 产品 10 维度拆解模板（**不得低于 v4.7，以 SK main 当前为准**；2026-05-16：**v4.8**，含 9.5 时间变量推敲等） |
+| 7 | `core/项目审问清单.md` | 项目评估前置排雷（**不得低于 v1.4，以 SK main 当前为准**；2026-05-16：**v1.5**） |
 | 8 | `core/三湘问道铁律.md` | 拆解和评估前的排除规则 |
 | 9 | `core/failure_modes.yml` | 失败模式库 |
 | 10 | `core/evidence_levels.yml` | 证据等级规则 |
 | 11 | `core/评估引擎速查版.md` | 7+3 步评估体系速查 |
-| 12 | `core/产品评估决策清单-v1.0.md` | 新产品方向进入深推前的硬筛子 |
+| 12 | `core/产品评估决策清单-v1.0.md` | 新产品方向进入深推前的硬筛子（**v1.4**） |
 | 13 | `core/SKILL-推演SOP-v1.3.md` | 从模糊想法到商业模型的推演流程 |
 | 14 | `core/SKILL-深度研究指令设计.md` | 多 AI 深度研究指令设计方法 |
 | 15 | `core/SKILL-AI产品复制推演框架-v0.1.md` | 海外 AI 产品复制与对标推演 |
@@ -72,8 +72,8 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 | 序号 | SK 路径 | 上传到 Project 后的用途 |
 |---:|---|---|
 | 19 | `cases/2026/诊断空白赛道拆解库.md` | 诊断空白系列的赛道母库 |
-| 20 | `cases/2026/推演流水账-诊断vs匹配vs三方错位-2026-04-25.md` | 诊断空白系列最重要的方法论推演 |
-| 21 | `cases/2026/推演流水账-尝一口方法论-2026-04-18.md` | 当前阶段打法原点 |
+| 20 | `cases/2026/推演流水账/推演流水账-诊断vs匹配vs三方错位-2026-04-25.md` | 诊断空白系列最重要的方法论推演 |
+| 21 | `cases/2026/推演流水账/推演流水账-尝一口方法论-2026-04-18.md` | 当前阶段打法原点 |
 | 22 | `cases/2026/角色定位与变现路径.md` | 判断力合伙人定位与变现路径 |
 | 23 | `core/SKILL-AI研究报告评估法.md` | 研究报告质量与可行动性评估 |
 
@@ -102,6 +102,8 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 - `radar/product-radar.md`
 - `radar/signals.md`
 - `content/公众号内容大纲-30篇规划.md`
+- `content/case-card-format-v1.0.md`
+- `meta/SK知识库使用方法-框架红队法.md`
 - `meta/CLAUDE系统指令.md` — **仅**作 Claude Project / 本地（如 `D:\sk`）工作流参考；**不是** ChatGPT Project 的最高规则；与 `MRYGP/SKGPT/instructions/chatgpt-project-instructions.md` 冲突时，**以 Project Instructions 为准**。
 
 ---
@@ -132,19 +134,20 @@ D:\SKGPT\project-upload
 
 ---
 
-## 七、2026-05-12 与 SK 主仓库核对摘要（本地读取结论）
+## 七、与 SK 主仓库核对摘要（以 `MRYGP/SK` **main** 当前文件头为准）
 
-以下基于 **`MRYGP/SK` 本地树**核对（推送前请以你机器上的文件头为准再次确认）：
+以下基于 **`MRYGP/SK` main**（2026-05-16 刷新 `project-upload/`）核对：
 
 | 文件 | 核对结论 |
 |---|---|
 | `content/article_template.md` | **v2.6**；开篇 **30 秒规则** 为正式长文主口径，固定 `## 先说结论` **不是**全文种唯一硬规则。 |
-| `core/product-teardown-template.md` | **v4.7** |
-| `core/项目审问清单.md` | **v1.4** |
-| `content/公众号内容生产经验手册.md` | 含 **教训34–37** 及后续条目（本地头注含教训38 时以仓库为准） |
-| `meta/CLAUDE系统指令.md` | 行为原则与历史主控参考；ChatGPT Project **最高规则**为 **Project Instructions**，非本文件。 |
+| `core/product-teardown-template.md` | **v4.8**（基线不得低于 **v4.7**） |
+| `core/项目审问清单.md` | **v1.5**（基线不得低于 **v1.4**） |
+| `core/产品评估决策清单-v1.0.md` | **v1.4** |
+| `content/公众号内容生产经验手册.md` | 含 **教训38**（及教训34–37 等；后续条目以 main 为准） |
+| `meta/CLAUDE系统指令.md` | 行为原则与历史主控参考；**不**进入 25 位上传包；ChatGPT Project **最高规则**为 **Project Instructions**，非本文件。 |
 
-**刷新建议**：每次调整写作/拆解硬规则后，从 `MRYGP/SK` **main** 重新导出上表 **A** 中与规则相关的 `content/*`、`core/*` 副本，替换 Project 内旧文件；**勿**把 `ops/`、`cases/2026/case-index.md` 等动态状态当作上传包稳定部分。
+**刷新建议**：每次调整写作/拆解硬规则后，从 `MRYGP/SK` **main** 重新导出上表 **A** 中与规则相关的 `content/*`、`core/*` 副本到 `SKGPT/project-upload/stable-core/`，并同步 **B/C** 后替换 ChatGPT Project 内旧文件；**勿**把 `ops/`、`cases/2026/case-index.md`、`cases/2026/case-cards.md`、`radar/` 等动态状态当作上传包稳定部分。
 
 ---
 
