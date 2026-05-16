@@ -59,7 +59,7 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 | 9 | `core/failure_modes.yml` | 失败模式库 |
 | 10 | `core/evidence_levels.yml` | 证据等级规则 |
 | 11 | `core/评估引擎速查版.md` | 7+3 步评估体系速查 |
-| 12 | `core/产品评估决策清单-v1.0.md` | 新产品方向进入深推前的硬筛子（**v1.4**） |
+| 12 | `core/产品评估决策清单-v1.0.md` | 新产品方向进入深推前的硬筛子（**文件名不变**；正文当前 **v1.4**） |
 | 13 | `core/SKILL-推演SOP-v1.3.md` | 从模糊想法到商业模型的推演流程 |
 | 14 | `core/SKILL-深度研究指令设计.md` | 多 AI 深度研究指令设计方法 |
 | 15 | `core/SKILL-AI产品复制推演框架-v0.1.md` | 海外 AI 产品复制与对标推演 |
@@ -132,6 +132,14 @@ D:\SKGPT\project-upload
 
 将上表 **A / B / C** 对应文件从 **`MRYGP/SK`** 导出副本放入，便于版本化与手工上传 ChatGPT Project。
 
+**`project-upload/` 扁平文件名（须与 §三 一一对应，共 25 个）**
+
+| 目录 | 文件名 |
+|---|---|
+| `stable-core/`（18） | `北极星文档.md`、`article_template.md`、`公众号写作指南.md`、`公众号内容生产经验手册.md`、`文章发布SOP.md`、`product-teardown-template.md`、`项目审问清单.md`、`三湘问道铁律.md`、`failure_modes.yml`、`evidence_levels.yml`、`评估引擎速查版.md`、`产品评估决策清单-v1.0.md`、`SKILL-推演SOP-v1.3.md`、`SKILL-深度研究指令设计.md`、`SKILL-AI产品复制推演框架-v0.1.md`、`SKILL-多维综合产品推演框架.md`、`SKILL-MTP构思招募法.md`、`SKILL-真实产品外部体检与机会推演SOP.md` |
+| `current-mainline/`（5） | `诊断空白赛道拆解库.md`、`推演流水账-诊断vs匹配vs三方错位-2026-04-25.md`、`推演流水账-尝一口方法论-2026-04-18.md`、`角色定位与变现路径.md`、`SKILL-AI研究报告评估法.md` |
+| `task-slots/`（2） | `DOC-D029-客户采用六因子的收敛律.md`、`SKILL-坐标系校正判断.md` |
+
 ---
 
 ## 七、与 SK 主仓库核对摘要（以 `MRYGP/SK` **main** 当前文件头为准）
@@ -143,7 +151,7 @@ D:\SKGPT\project-upload
 | `content/article_template.md` | **v2.6**；开篇 **30 秒规则** 为正式长文主口径，固定 `## 先说结论` **不是**全文种唯一硬规则。 |
 | `core/product-teardown-template.md` | **v4.8**（含可选第十二章「反向 teardown」） |
 | `core/项目审问清单.md` | **v1.5**（「建造 > 否决」；Part A 触发先判红线，不直接否决） |
-| `core/产品评估决策清单-v1.0.md` | **v1.4** |
+| `core/产品评估决策清单-v1.0.md` | 文件名 **v1.0** 不变；正文 **v1.4** |
 | `content/公众号内容生产经验手册.md` | 含 **教训38**（及教训34–37 等；后续条目以 main 为准） |
 | `meta/CLAUDE系统指令.md` | 行为原则与历史主控参考；**不**进入 25 位上传包；ChatGPT Project **最高规则**为 **Project Instructions**，非本文件。 |
 
