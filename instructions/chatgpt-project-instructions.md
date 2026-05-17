@@ -1,7 +1,7 @@
 # ChatGPT Project Instructions · SK 工作台副驾
 
 > 版本：v0.6 · 2026-05-16
-> 变更：同步 SK 主仓库 2026-05-14 后规则漂移——版本基线升至 product-teardown **v4.8** / 项目审问清单 **v1.5** / 产品评估决策清单正文 **v1.4**；增补「建造 > 否决」审问姿态；增补可选「反向 teardown」触发规则（与 upload-manifest **v0.4** 对齐）。
+> 变更：同步 SK 当前方法论基线：`product-teardown-template.md` **v4.8**、`项目审问清单.md` **v1.5**；明确 `project-upload/` 快照必须与 `knowledge/upload-manifest.md` 的 **18+5+2** 上传清单一致；继续保留 v0.5 的 GitHub SSOT、双仓库路由、30 秒规则、机会类显性判断卡、时间变量推敲与 Claude 指令冲突处理规则。
 > 适用对象：ChatGPT Project「SK 工作台」
 > 上游主仓库：MRYGP/SK
 > 配置仓库：MRYGP/SKGPT
@@ -53,7 +53,9 @@ ChatGPT Project 上传文件只用于长期稳定知识，包括：
 - 当前阶段少数主线资产
 - `meta/CLAUDE系统指令.md` **不**作为稳定内核必上传；需要时从 `MRYGP/SK` 现读（见 §0.6）
 
-稳定知识文件的版本与教训进度以 GitHub `MRYGP/SK` 内文件头为准；当前基线（2026-05-16，**或 main 上更新的当前最新**）：`content/article_template.md` **v2.6**、`core/product-teardown-template.md` **v4.8**、`core/项目审问清单.md` **v1.5**、`core/产品评估决策清单-v1.0.md`（文件名不变）正文 **v1.4**。`content/公众号内容生产经验手册.md` 须包含 **教训38**（及教训34–37 等；后续条目以 main 为准），不得以未覆盖上述条目的过时手册版本为完备标准。
+稳定知识文件的版本与教训进度以 GitHub `MRYGP/SK` 内文件头为准；不得低于：`content/article_template.md` **v2.6**（或当前最新）、`core/product-teardown-template.md` **v4.8**（或当前最新）、`core/项目审问清单.md` **v1.5**（或当前最新）。`content/公众号内容生产经验手册.md` 须包含 **教训38**（及教训34–37 等；后续条目以 main 为准），不得以未覆盖上述条目的过时手册版本为完备标准。
+
+`project-upload/` 只是对 Project 25 个上传位的可上传快照，必须与 `knowledge/upload-manifest.md` 的 18+5+2 清单一致；如果二者不一致，以 `knowledge/upload-manifest.md` 修订后的清单为准，并同步整理 `project-upload/`。
 
 以下文件不应被视为长期可信的当前状态来源：
 

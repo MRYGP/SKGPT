@@ -1,7 +1,7 @@
 # SKGPT · ChatGPT Project 上传文件清单
 
 > 版本：v0.4 · 2026-05-16  
-> 变更：同步 SK 主仓库 2026-05-14 后规则漂移；固化 18+5+2；`article_template` **v2.6**；`product-teardown-template` **v4.8**（含可选第十二章「反向 teardown」）；`项目审问清单` **v1.5**（「建造 > 否决」：Part A 触发先判四条红线，未落入则记入问题清单继续审问）；`产品评估决策清单-v1.0` 正文 **v1.4**；`公众号内容生产经验手册` 须含 **教训38**；明确 `meta/CLAUDE系统指令.md`、`README.md`、`ops/执行状态总表.md`、`content/公众号内容大纲-30篇规划.md`、`content/case-card-format-v1.0.md` 等不长期上传、须现读  
+> 变更：同步 SK 当前方法论基线：`product-teardown-template` **v4.8**、`项目审问清单` **v1.5**；对齐 `project-upload/` 快照目录为 **18 稳定内核 + 5 当前主线 + 2 任务机动**；确认 `CLAUDE系统指令.md`、`case-card-format-v1.0.md`、`公众号内容大纲-30篇规划.md`、`SK知识库使用方法-框架红队法.md` 不长期占用 Project 25 个上传位。  
 > 维护仓库：`MRYGP/SKGPT`（本文件**不**占用 ChatGPT Project 的 25 个知识库上传位，仅为**上传包说明书**）
 
 ---
@@ -53,8 +53,8 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 | 3 | `content/公众号写作指南.md` | 语言规范、证据规则、禁用词 |
 | 4 | `content/公众号内容生产经验手册.md` | 文章生产经验、检查清单、历史教训（须含 **教训38**；若主仓库已增后续条目以 SK main 当前为准） |
 | 5 | `content/文章发布SOP.md` | 发布前后流程 |
-| 6 | `core/product-teardown-template.md` | AI 产品 10 维度拆解模板（**v4.8**，含 9.5 时间变量推敲、可选第十二章「反向 teardown」） |
-| 7 | `core/项目审问清单.md` | 项目评估前置排雷（**v1.5**：「建造 > 否决」；Part A 触发先判四条红线） |
+| 6 | `core/product-teardown-template.md` | AI 产品 10 维度拆解模板（**v4.8**，含可选第十二章「反向 teardown」；继承 v4.7 出海/跨境政策变量核查与 9.5 时间变量推敲等） |
+| 7 | `core/项目审问清单.md` | 项目评估前置排雷（**v1.5**，强调“建造 > 否决”：问题用于设计应对方案，否决只用于法律/道德/资金/无反馈四条红线） |
 | 8 | `core/三湘问道铁律.md` | 拆解和评估前的排除规则 |
 | 9 | `core/failure_modes.yml` | 失败模式库 |
 | 10 | `core/evidence_levels.yml` | 证据等级规则 |
@@ -142,18 +142,17 @@ D:\SKGPT\project-upload
 
 ---
 
-## 七、与 SK 主仓库核对摘要（以 `MRYGP/SK` **main** 当前文件头为准）
+## 七、2026-05-16 与 SK 主仓库核对摘要
 
-以下基于 **`MRYGP/SK` main**（2026-05-16 刷新 `project-upload/`）核对：
+以下基于 `MRYGP/SK` 当前主仓库核对；Project 上传文件只是稳定缓存，动态状态与最新方法论仍以 GitHub 当前文件为准。
 
 | 文件 | 核对结论 |
 |---|---|
-| `content/article_template.md` | **v2.6**；开篇 **30 秒规则** 为正式长文主口径，固定 `## 先说结论` **不是**全文种唯一硬规则。 |
-| `core/product-teardown-template.md` | **v4.8**（含可选第十二章「反向 teardown」） |
-| `core/项目审问清单.md` | **v1.5**（「建造 > 否决」；Part A 触发先判红线，不直接否决） |
-| `core/产品评估决策清单-v1.0.md` | 文件名 **v1.0** 不变；正文 **v1.4** |
-| `content/公众号内容生产经验手册.md` | 含 **教训38**（及教训34–37 等；后续条目以 main 为准） |
-| `meta/CLAUDE系统指令.md` | 行为原则与历史主控参考；**不**进入 25 位上传包；ChatGPT Project **最高规则**为 **Project Instructions**，非本文件。 |
+| `content/article_template.md` | **v2.6**；开篇以 **30 秒规则** 为正式长文主口径，机会类需显性前置判断卡；不把固定 `## 先说结论` 当作所有文种唯一硬规则。 |
+| `core/product-teardown-template.md` | **v4.8**；新增可选第十二章「反向 teardown」，继承 v4.7 出海/跨境政策变量核查与 9.5 时间变量推敲。 |
+| `core/项目审问清单.md` | **v1.5**；强调“建造 > 否决”，问题用于设计应对方案，否决只用于法律/道德/资金/无反馈四条红线。 |
+| `content/公众号内容生产经验手册.md` | 2026-05-12 更新，须包含教训34–38；若 SK 后续迭代，以主仓库当前文件头为准。 |
+| `meta/CLAUDE系统指令.md` | 不进入 25 个长期上传位；仅作 Claude Project / 本地工作流参考。ChatGPT Project 以 `instructions/chatgpt-project-instructions.md` 为准。 |
 
 **刷新建议**：每次调整写作/拆解硬规则后，从 `MRYGP/SK` **main** 重新导出上表 **A** 中与规则相关的 `content/*`、`core/*` 副本到 `SKGPT/project-upload/stable-core/`，并同步 **B/C** 后替换 ChatGPT Project 内旧文件；**勿**把 `ops/`、`cases/2026/case-index.md`、`cases/2026/case-cards.md`、`radar/` 等动态状态当作上传包稳定部分。
 
