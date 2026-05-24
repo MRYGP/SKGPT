@@ -41,5 +41,8 @@ project-upload/   # 建议上传包的版本化快照（非 SK 全量镜像）
 |------|------|
 | **MRYGP/SK** | 操作系统与知识库正文、动态状态与案例 |
 | **MRYGP/SKGPT**（本仓库） | ChatGPT / GPTs 侧配置、清单、协议与上传包快照 |
+| **MRYGP/daiyixia** | 「戴一下」项目执行真源;头发试戴 GPT Project 的 Instructions 与知识库已迁至此仓库 |
+
+**头发 AI / 戴一下 GPT Project**：`projects/头发AI产品推进台.md` 已弃用(2026-05-24)。请改用 `daiyixia/系统指令/GPT-Project-Instructions.md` 与 `github.com/MRYGP/daiyixia` 知识库。
 
 维护主仓库内容后，按 `knowledge/upload-manifest.md` 更新 `project-upload/` 中的对应副本，再在本仓库提交，即可形成可追溯的上传包版本。

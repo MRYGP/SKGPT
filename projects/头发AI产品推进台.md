@@ -1,11 +1,23 @@
-> 版本:v0.1 · 2026-05-19
-> 用途:ChatGPT Project「SK｜头发 AI 产品推进台」的配置文件
+> 版本:v0.2 · 2026-05-24
+> 用途:~~ChatGPT Project「SK｜头发 AI 产品推进台」~~ → **已弃用,见下方迁移表**
 > 来源:SK 工作台讨论 + SKGPT 现读协议 + 头发产品目录当前主线
-> 维护规则:每次 5/22 后重大阶段变化时,检查上传文件是否需要调整
+> 维护规则:~~每次 5/22 后~~ → **改在 `MRYGP/daiyixia` 维护;本文件仅留痕**
+>
+> ⚠️ **本配置已弃用(2026-05-24)** · ChatGPT Project 已迁为「**戴一下·假发 AI 试戴**」。**请勿再按本文件维护旧 Project。**
+>
+> | 用途 | 新位置 |
+> |---|---|
+> | Instructions 真源 | `D:\daiyixia\系统指令\GPT-Project-Instructions.md` |
+> | 配置备份参考 | `D:\daiyixia\系统指令\GPT-Project配置-原始备份.md` |
+> | 知识库仓库 | `github.com/MRYGP/daiyixia` |
+> | 项目入口 README | `D:\daiyixia\PROJECT-README.md` |
+> | 开场必读 | `daiyixia/00-戴一下核心定调与阶段路线.md` |
+>
+> 下文保留 SK 时期留痕,仅供对照,**不作为执行依据**。
 
 ---
 
-# SK｜头发 AI 产品推进台 · Project 配置
+# SK｜头发 AI 产品推进台 · Project 配置(历史留痕)
 
 ## 一、Project 基本信息
 
