@@ -1,8 +1,9 @@
 # SKGPT · GitHub 现读协议
 
-> 版本：v0.1 · 2026-04-28  
-> 用途：规定 ChatGPT Project / GPTS 什么时候必须读取 GitHub `MRYGP/SK` 当前文件  
-> 原则：动态状态不靠项目上传缓存判断
+> 版本：v0.2 · 2026-07-05
+> 用途：规定 ChatGPT Project / GPTS 什么时候必须读取 GitHub `MRYGP/SK` 当前文件
+> 变更：`ops/当前态.md` 成为当前状态第一入口；`ops/执行状态总表.md` 降级为历史变更日志；补充 SKZJ / daiyixia 路由。
+> 原则：动态状态不靠项目上传缓存判断。
 
 ---
 
@@ -46,11 +47,13 @@ GitHub `MRYGP/SK` 是 SK 当前状态的可读取 SSOT。
 
 涉及 SK 当前状态时，默认读取顺序是：
 
-1. `README.md`
-2. `ops/执行状态总表.md`
-3. `cases/2026/case-index.md`
-4. `cases/2026/case-cards.md`
-5. 与任务直接相关的文件
+1. `ops/当前态.md`
+2. `cases/2026/case-index.md`
+3. `cases/2026/case-cards.md`
+4. `ops/项目看板/*` 中与任务直接相关的看板
+5. `README.md` 作为结构导航
+6. `ops/执行状态总表.md` 作为历史变更日志
+7. 与任务直接相关的文件
 
 ---
 
@@ -60,10 +63,12 @@ GitHub `MRYGP/SK` 是 SK 当前状态的可读取 SSOT。
 
 读取：
 
-1. `README.md`
-2. `ops/执行状态总表.md`
-3. `cases/2026/case-index.md`
-4. `cases/2026/case-cards.md`
+1. `ops/当前态.md`
+2. `cases/2026/case-index.md`
+3. `cases/2026/case-cards.md`
+4. 相关项目看板
+5. `README.md`
+6. 必要时读 `ops/执行状态总表.md` 查历史
 
 输出：
 
@@ -78,14 +83,14 @@ GitHub `MRYGP/SK` 是 SK 当前状态的可读取 SSOT。
 
 读取：
 
-1. `README.md`
-2. `ops/执行状态总表.md`
-3. `cases/2026/case-index.md`
-4. 该文章文件
+1. `ops/当前态.md`
+2. `cases/2026/case-index.md`
+3. 该文章文件
 
 必要时读取：
 
-5. `cases/2026/case-cards.md`
+4. `cases/2026/case-cards.md`
+5. `ops/执行状态总表.md` 查历史变更
 
 输出：
 
@@ -125,10 +130,11 @@ GitHub `MRYGP/SK` 是 SK 当前状态的可读取 SSOT。
 
 再按需读取 GitHub 当前文件：
 
+- `ops/当前态.md`
+- `cases/2026/case-index.md`
 - 文章文件
 - 相关底稿
-- `ops/执行状态总表.md`
-- `cases/2026/case-index.md`
+- 必要时读 `ops/执行状态总表.md` 查历史
 
 ---
 
@@ -178,10 +184,12 @@ GitHub `MRYGP/SK` 是 SK 当前状态的可读取 SSOT。
 
 如果涉及 SK 当前状态，再读取 GitHub `MRYGP/SK`：
 
-1. `README.md`
-2. `ops/执行状态总表.md`
-3. `cases/2026/case-index.md`
-4. `cases/2026/case-cards.md`
+1. `ops/当前态.md`
+2. `cases/2026/case-index.md`
+3. `cases/2026/case-cards.md`
+4. 相关项目看板
+5. `README.md`
+6. 必要时读 `ops/执行状态总表.md` 查历史
 
 输出：
 
@@ -201,31 +209,40 @@ GitHub `MRYGP/SK` 是 SK 当前状态的可读取 SSOT。
 1. 明确列出冲突
 2. 标注各文件的说法
 3. 优先采用用户本轮明确确认
-4. 其次采用 GitHub 中更新时间更新、位置更权威的文件
+4. 其次采用权威位置：当前阶段以 `ops/当前态.md` 为准，发布与编号以 `case-index.md` 为准，项目细节以相关项目看板为准，历史变化查 `ops/执行状态总表.md`
 5. 给出最小修复方案
 
 示例：
 
 ```txt
-README.md：012/013 已发布
-ops/执行状态总表.md：012/013 待发布
-case-index.md：012/013 定稿待发布
+ops/当前态.md：017 已发布，018/021/023/025 成稿未发
+case-index.md：017 已发布，018/021/023/025 待发或待审
+README.md：只列定局态，未重复维护在途状态
 
-判断：状态漂移
-用户本轮确认：012/013 已发布
-最小动作：同步执行状态总表与 case-index，而不是继续写新文章
+判断：当前状态不冲突。若 README 或执行状态总表出现旧口径，只作导航或历史，不覆盖当前态与 case-index。
 ```
 
 ---
 
-## 六、动态文件不得长期上传
+## 六、多仓路由补充
+
+- SK 当前态 / 内容 / 方法论 / 项目看板：读 `MRYGP/SK`
+- Project / GPTS / 上传包 / Instructions / 现读协议：读 `MRYGP/SKGPT`
+- KAIROS / 人生馆 / 水杯 / H5 / 剧本 / 冷读：读 `MRYGP/SKZJ`
+- 戴一下 / 假发 AI 试戴：当前已封存，只有用户明确要求历史查询或复盘时读 `MRYGP/daiyixia`
+
+---
+
+## 七、动态文件不得长期上传
 
 以下文件不得作为 Project 长期上传知识使用：
 
+- `ops/当前态.md`
 - `README.md`
 - `ops/执行状态总表.md`
 - `cases/2026/case-index.md`
 - `cases/2026/case-cards.md`
+- `ops/项目看板/*`
 - `ops/清单草稿-未验证教训.md`
 - `ops/清单候选-待升级教训.md`
 - `meta/changelog.md`
@@ -241,7 +258,7 @@ case-index.md：012/013 定稿待发布
 
 ---
 
-## 七、Project 上传文件的正确用途
+## 八、Project 上传文件的正确用途
 
 Project 上传文件用于提供稳定上下文，不用于判断当前状态。
 
@@ -268,13 +285,14 @@ Project 上传文件用于提供稳定上下文，不用于判断当前状态。
 - 当前执行进度
 - 文章索引
 - 案例卡进度
+- 项目看板
 - 雷达状态
 - changelog
 - 高频草稿文件
 
 ---
 
-## 八、输出要求
+## 九、输出要求
 
 凡因 GitHub 现读发现冲突，输出必须包括：
 
@@ -295,7 +313,7 @@ Project 上传文件用于提供稳定上下文，不用于判断当前状态。
 
 ---
 
-## 九、最小验收标准
+## 十、最小验收标准
 
 每次执行 GitHub 现读任务后，至少要能回答：
 

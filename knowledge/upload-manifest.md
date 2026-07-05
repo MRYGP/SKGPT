@@ -1,7 +1,7 @@
 # SKGPT · ChatGPT Project 上传文件清单
 
-> 版本：v0.4 · 2026-05-16  
-> 变更：同步 SK 当前方法论基线：`product-teardown-template` **v4.8**、`项目审问清单` **v1.5**；对齐 `project-upload/` 快照目录为 **18 稳定内核 + 5 当前主线 + 2 任务机动**；确认 `CLAUDE系统指令.md`、`case-card-format-v1.0.md`、`公众号内容大纲-30篇规划.md`、`SK知识库使用方法-框架红队法.md` 不长期占用 Project 25 个上传位。  
+> 版本：v0.5 · 2026-07-05
+> 变更：同步 SK 当前态入口链：`ops/当前态.md`、项目看板、case-index、case-cards 均属于动态现读文件，不进入长期 Project Knowledge；确认本轮需手工替换的上传快照为 `北极星文档.md`、`三湘问道铁律.md`、`SKILL-AI研究报告评估法.md`；保持 **18 稳定内核 + 5 当前主线 + 2 任务机动** 结构不变。
 > 维护仓库：`MRYGP/SKGPT`（本文件**不**占用 ChatGPT Project 的 25 个知识库上传位，仅为**上传包说明书**）
 
 ---
@@ -24,9 +24,9 @@ ChatGPT Project 上传文件**不是** SK 仓库镜像。
 
 上传文件只承担三个作用：
 
-1. 给模型提供长期稳定的判断框架  
-2. 给模型提供写作、拆解、推演的操作模板  
-3. 给模型提供当前阶段高频使用的少数主线资产  
+1. 给模型提供长期稳定的判断框架
+2. 给模型提供写作、拆解、推演的操作模板
+3. 给模型提供当前阶段高频使用的少数主线资产
 
 ---
 
@@ -93,9 +93,11 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 下列文件**不要**作为「长期同步的知识库正文」依赖 Project 内副本；任务需要时在 **GitHub / 本地 SK** 打开当前版本：
 
 - `README.md`
+- `ops/当前态.md`
 - `ops/执行状态总表.md`
 - `cases/2026/case-index.md`
 - `cases/2026/case-cards.md`
+- `ops/项目看板/*`
 - `ops/清单草稿-未验证教训.md`
 - `ops/清单候选-待升级教训.md`
 - `meta/changelog.md`
@@ -105,6 +107,8 @@ ChatGPT Project 知识库最多 **25** 个文件，本清单采用：
 - `content/case-card-format-v1.0.md`
 - `meta/SK知识库使用方法-框架红队法.md`
 - `meta/CLAUDE系统指令.md` — **仅**作 Claude Project / 本地（如 `D:\sk`）工作流参考；**不是** ChatGPT Project 的最高规则；与 `MRYGP/SKGPT/instructions/chatgpt-project-instructions.md` 冲突时，**以 Project Instructions 为准**。
+
+注意：`ops/当前态.md` 是 SK 当前状态一号入口，但仍是高频动态状态文件；项目看板、case-index、case-cards 同理，不进入长期 Project Knowledge。任务需要时现读 GitHub / 本地当前文件。
 
 ---
 
