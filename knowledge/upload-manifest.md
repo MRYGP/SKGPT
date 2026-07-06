@@ -164,4 +164,4 @@ D:\SKGPT\project-upload
 
 ## 八、与上一版指令的关系
 
-若曾使用「`content/case-card-format-v1.0.md` 默认进主线」等旧排列：以 **本 v0.4 清单 §三** 为准；case-card 类仍建议**任务时从 SK 现读**，不占 25 位中的固定名。
+若曾使用「`content/case-card-format-v1.0.md` 默认进主线」等旧排列：以 **本 v0.5 清单 §三** 为准；case-card 类仍建议**任务时从 SK 现读**，不占 25 位中的固定名。
